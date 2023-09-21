@@ -16,18 +16,18 @@
         android:id="@+id/progress"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:indeterminate="true"
         android:layout_gravity="center"
-        android:foregroundGravity="center"
-        android:visibility="gone"
         android:fitsSystemWindows="true"
+        android:foregroundGravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:trackCornerRadius="@dimen/dp2" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/empListRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/empListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

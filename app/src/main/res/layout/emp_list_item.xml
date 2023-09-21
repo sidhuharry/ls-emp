@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/displayPicture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
             android:src="@drawable/ic_launcher_background"
             android:padding="@dimen/dp20"/>
 
@@ -86,7 +86,7 @@
             android:gravity="center_vertical"
             android:padding="@dimen/dp5"
             android:drawableStart="@android:drawable/ic_btn_speak_now"
-            android:text="blah blah blah genius and blah"
+            android:text="This is my bio but it's actually not, it's just a placeholder."
             android:textAllCaps="false"
             android:textColor="@color/black"
             android:textSize="18sp"

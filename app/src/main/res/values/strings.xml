@@ -5,5 +5,6 @@
     <string name="home_activity_subtitle">Meet the team</string>
     <string name="error_desc_emp">Error loading employees</string>
     <string name="action_settings">Placeholder</string>
+    <string name="menu_refresh">Refresh</string>
 
 </resources>

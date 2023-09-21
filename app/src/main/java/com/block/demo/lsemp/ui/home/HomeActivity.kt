@@ -2,6 +2,7 @@ package com.block.demo.lsemp.ui.home
 
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.Observer
@@ -85,6 +86,16 @@ class HomeActivity : BaseActivity() {
 
     private fun onEmpItemClick(employee: Employee) {
         // move to detailed with large image and stuff
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_refresh -> {
+                viewModel.loadEmp()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     companion object {

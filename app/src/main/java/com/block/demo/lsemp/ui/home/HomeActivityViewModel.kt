@@ -14,17 +14,14 @@ class HomeActivityViewModel(private val empDetailsRepo: EmployeeDetailsRepo) : V
 
     // private, because you should not expose the MutableLiveData
     private val _isError = MutableLiveData<Boolean>()
-
     val isError: LiveData<Boolean>
         get() = _isError
 
     private val _isLoading = MutableLiveData<Boolean>()
-
     val isLoading: LiveData<Boolean>
         get() = _isLoading
 
     private val _employees = MutableLiveData<EmployeeNetworkResponse>()
-
     val employees: LiveData<EmployeeNetworkResponse>
         get() = _employees
 
